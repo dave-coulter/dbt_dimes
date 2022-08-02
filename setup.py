@@ -11,6 +11,6 @@ setuptools.setup(
     description="Functions to help build dbt models",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    install_requires=['pandas', 
+    install_requires=['pandas'], 
     packages = setuptools.find_packages()
 )
