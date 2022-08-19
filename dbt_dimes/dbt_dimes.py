@@ -4,7 +4,6 @@ Functions to assist creating dbt models
 ______________________________________________________________________________
 """
 from pathlib import Path
-from re import L
 
 
 def create_src_yaml(source_name: str,
