@@ -4,7 +4,6 @@ Functions to assist creating dbt models
 ______________________________________________________________________________
 """
 from pathlib import Path
-from re import L
 
 
 def create_src_yaml(source_name: str,
@@ -116,10 +115,10 @@ def create_stg_yaml(source_name: str, table_list: list,
 
     '''
     
-    yaml = f'''version: 2
+    yaml = '''version: 2
 
 models:
-  - name: ''' + '\n      - name: '.join(table_list)
+  - name: ''' + '\n  - name: '.join(table_list)
 
     with open(save_path / (f'stg_{source_name}' '.yml'), 'w') as file:
         file.write(yaml)
