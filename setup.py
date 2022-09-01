@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="dbt_dimes",
-    version="0.0.1",
+    version="0.0.2",
     author="Dave Coulter",
     author_email="dave.coulter@rmit.edu.au",
     description="Functions to help build dbt models",
