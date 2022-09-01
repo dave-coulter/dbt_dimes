@@ -4,4 +4,4 @@
 
 __version__ = '0.0.2'
 
-from .dbt_dimes.dbt_dimes import dbt_dimes
+from .dbt_dimes import dbt_dimes
